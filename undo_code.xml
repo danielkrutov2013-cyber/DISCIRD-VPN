@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<program>
+  <header>
+    <applicationBuildName></applicationBuildName>
+    <applicationBuildNumber>0</applicationBuildNumber>
+    <applicationBuildType>release</applicationBuildType>
+    <applicationName>NewCatroid</applicationName>
+    <applicationVersion>2.1.2BETA</applicationVersion>
+    <catrobatLanguageVersion>1.17</catrobatLanguageVersion>
+    <customResolution>false</customResolution>
+    <dateTimeUpload></dateTimeUpload>
+    <description></description>
+    <deviceName>220333QNY</deviceName>
+    <gitRemoteUrl></gitRemoteUrl>
+    <isCastProject>false</isCastProject>
+    <landscapeMode>false</landscapeMode>
+    <listeningLanguageTag></listeningLanguageTag>
+    <mediaLicense></mediaLicense>
+    <notesAndCredits></notesAndCredits>
+    <physicsHeightArea>2.0</physicsHeightArea>
+    <physicsWidthArea>3.0</physicsWidthArea>
+    <platform>Android</platform>
+    <platformVersion>30</platformVersion>
+    <programLicense></programLicense>
+    <programName>DiscirdVPN</programName>
+    <remixOf></remixOf>
+    <scenesEnabled>true</scenesEnabled>
+    <screenHeight>1505</screenHeight>
+    <screenMode>STRETCH</screenMode>
+    <screenWidth>720</screenWidth>
+    <tags></tags>
+    <url></url>
+    <userHandle></userHandle>
+  </header>
+  <settings/>
+  <scenes>
+    <scene sceneId="08d5e636-c83d-4527-80f9-044eb9580c2a">
+      <name>Сцена</name>
+      <objectList>
+        <object type="Sprite" spriteId="94366374-13dc-4c30-8563-05c5616f10dc" name="Фон">
+          <lookList>
+            <look fileName="Фон.png" lookId="18cc67c1-5208-43bd-974f-9c7aed970a66" name="Фон">
+              <isWebRequest>false</isWebRequest>
+              <valid>true</valid>
+            </look>
+            <look fileName="Фон_#0.png" lookId="fcb9ce4a-21c8-4f82-9253-b81331c20613" name="Фон (1)">
+              <isWebRequest>false</isWebRequest>
+              <valid>true</valid>
+            </look>
+          </lookList>
+          <soundList/>
+          <scriptList/>
+          <nfcTagList/>
+          <userVariables/>
+          <userLists/>
+          <userDefinedBrickList/>
+        </object>
+        <object type="Sprite" spriteId="5dccfa49-ba1b-42f8-8e50-735c377af28f" name="кнопка включения">
+          <lookList>
+            <look fileName="Мой актер или объект.png" lookId="ab6a1805-1ee7-4e9e-ae48-be497fc7c519" name="кнопка включения">
+              <isWebRequest>false</isWebRequest>
+              <valid>true</valid>
+            </look>
+          </lookList>
+          <soundList/>
+          <scriptList>
+            <script type="StartScript" posX="0.0" posY="0.0">
+              <brickList>
+                <brick type="PlaceAtBrick">
+                  <brickId>78bc9e55-b721-41f6-aa17-176c722ee72a</brickId>
+                  <commentedOut>false</commentedOut>
+                  <formulaList>
+                    <formula category="X_POSITION">
+                      <additionalChildren/>
+                      <rightChild>
+                        <additionalChildren/>
+                        <type>NUMBER</type>
+                        <value>18</value>
+                      </rightChild>
+                      <type>OPERATOR</type>
+                      <value>MINUS</value>
+                    </formula>
+                    <formula category="Y_POSITION">
+                      <additionalChildren/>
+                      <rightChild>
+                        <additionalChildren/>
+                        <type>NUMBER</type>
+                        <value>526</value>
+                      </rightChild>
+                      <type>OPERATOR</type>
+                      <value>MINUS</value>
+                    </formula>
+                  </formulaList>
+                </brick>
+              </brickList>
+              <commentedOut>false</commentedOut>
+              <scriptId>6f8d6777-5d1a-4933-a1de-cce614a57917</scriptId>
+            </script>
+            <script type="WhenScript" posX="0.0" posY="0.0">
+              <brickList>
+                <brick type="ConnectServerBrick">
+                  <brickId>c1dabf87-94d1-4f9b-b2f7-536d15cdbe0b</brickId>
+                  <commentedOut>false</commentedOut>
+                  <formulaList>
+                    <formula category="IP">
+                      <additionalChildren/>
+                      <type>STRING</type>
+                      <value>127.0.0.1</value>
+                    </formula>
+                    <formula category="PORT">
+                      <additionalChildren/>
+                      <type>NUMBER</type>
+                      <value>1080</value>
+                    </formula>
+                  </formulaList>
+                </brick>
+                <brick type="SetLookBrick">
+                  <brickId>cc30aed2-3dc5-4d73-8f3e-5cdc25814cff</brickId>
+                  <commentedOut>false</commentedOut>
+                  <look reference="../../../../../lookList/look"/>
+                </brick>
+                <brick type="SetBackgroundBrick">
+                  <brickId>9fdfb889-0035-4ab4-bf2c-67320302b7e2</brickId>
+                  <commentedOut>false</commentedOut>
+                  <look reference="../../../../../../object/lookList/look[2]"/>
+                </brick>
+                <brick type="HideBrick">
+                  <brickId>7b6df259-c19a-4ea9-9112-769f492782f1</brickId>
+                  <commentedOut>false</commentedOut>
+                </brick>
+              </brickList>
+              <commentedOut>false</commentedOut>
+              <scriptId>fda3d948-9279-4f45-a946-9868cd6ed644</scriptId>
+            </script>
+            <script type="WhenBackgroundChangesScript" posX="0.0" posY="0.0">
+              <brickList>
+                <brick type="ShowBrick">
+                  <brickId>20e6bd92-4fab-477d-a23c-3df9fa3aa56c</brickId>
+                  <commentedOut>false</commentedOut>
+                </brick>
+              </brickList>
+              <commentedOut>false</commentedOut>
+              <scriptId>c17d23b4-eb67-4ecb-96f5-4d72dbbc003b</scriptId>
+              <look reference="../../../../object/lookList/look"/>
+            </script>
+          </scriptList>
+          <nfcTagList/>
+          <userVariables/>
+          <userLists/>
+          <userDefinedBrickList/>
+        </object>
+        <object type="Sprite" spriteId="7eb6a838-c719-4741-b264-b69e0623759f" name="кнопка выключения">
+          <lookList>
+            <look fileName="Мой актер или объект_#0.png" lookId="91c3dc9f-c867-4cbb-9b7f-3a7673567046" name="кнопка выключения">
+              <isWebRequest>false</isWebRequest>
+              <valid>true</valid>
+            </look>
+          </lookList>
+          <soundList/>
+          <scriptList>
+            <script type="StartScript" posX="0.0" posY="0.0">
+              <brickList>
+                <brick type="PlaceAtBrick">
+                  <brickId>9ee6daba-46d1-4161-b063-897336a903e5</brickId>
+                  <commentedOut>false</commentedOut>
+                  <formulaList>
+                    <formula category="X_POSITION">
+                      <additionalChildren/>
+                      <rightChild>
+                        <additionalChildren/>
+                        <type>NUMBER</type>
+                        <value>16</value>
+                      </rightChild>
+                      <type>OPERATOR</type>
+                      <value>MINUS</value>
+                    </formula>
+                    <formula category="Y_POSITION">
+                      <additionalChildren/>
+                      <rightChild>
+                        <additionalChildren/>
+                        <type>NUMBER</type>
+                        <value>476</value>
+                      </rightChild>
+                      <type>OPERATOR</type>
+                      <value>MINUS</value>
+                    </formula>
+                  </formulaList>
+                </brick>
+                <brick type="HideBrick">
+                  <brickId>2847f6f9-fba2-4688-bd27-e0654355d814</brickId>
+                  <commentedOut>false</commentedOut>
+                </brick>
+              </brickList>
+              <commentedOut>false</commentedOut>
+              <scriptId>b7e64b7b-c2dd-4887-8a3e-6007e2b4cb5d</scriptId>
+            </script>
+            <script type="WhenBackgroundChangesScript" posX="0.0" posY="0.0">
+              <brickList>
+                <brick type="ShowBrick">
+                  <brickId>5ff61c89-dc84-47f7-8a05-3a4a758ee5a6</brickId>
+                  <commentedOut>false</commentedOut>
+                </brick>
+              </brickList>
+              <commentedOut>false</commentedOut>
+              <scriptId>86316de9-188a-4bfe-bab1-c4ac061ed914</scriptId>
+              <look reference="../../../../object/lookList/look[2]"/>
+            </script>
+            <script type="WhenBackgroundChangesScript" posX="0.0" posY="0.0">
+              <brickList>
+                <brick type="HideBrick">
+                  <brickId>9757288c-e768-4c1e-8588-188ee3d0c5c2</brickId>
+                  <commentedOut>false</commentedOut>
+                </brick>
+              </brickList>
+              <commentedOut>false</commentedOut>
+              <scriptId>df05088f-9251-4130-8ab6-20df0e9a793f</scriptId>
+              <look reference="../../../../object/lookList/look"/>
+            </script>
+            <script type="WhenScript" posX="0.0" posY="0.0">
+              <brickList>
+                <brick type="StopServerBrick">
+                  <brickId>10a4e0f7-cfef-4cc6-b233-f59b6dab5502</brickId>
+                  <commentedOut>false</commentedOut>
+                  <formulaList/>
+                </brick>
+                <brick type="SetBackgroundBrick">
+                  <brickId>a4de51e3-ddfa-4e39-9289-92e1fc5f7e3f</brickId>
+                  <commentedOut>false</commentedOut>
+                  <look reference="../../../../../../object/lookList/look"/>
+                </brick>
+              </brickList>
+              <commentedOut>false</commentedOut>
+              <scriptId>ac4cca45-dce3-4dd9-a04e-214326749281</scriptId>
+            </script>
+          </scriptList>
+          <nfcTagList/>
+          <userVariables/>
+          <userLists/>
+          <userDefinedBrickList/>
+        </object>
+      </objectList>
+    </scene>
+  </scenes>
+  <programVariableList/>
+  <programListOfLists/>
+  <programMultiplayerVariableList/>
+</program>
